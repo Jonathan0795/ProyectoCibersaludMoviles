@@ -7,7 +7,9 @@ class Producto( var codigo:Int,
                 var detalleProducto:String,
                 var tipoPresentacion:String,
                 var precio:Double,
-                var urlProducto:String
+                var stock:Int,
+                var urlProducto:String,
+                var estado:Int
               ){
 
 }
