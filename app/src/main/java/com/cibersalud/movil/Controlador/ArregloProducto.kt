@@ -17,7 +17,7 @@ class ArregloProducto {
                 rs.getInt(1),rs.getInt(2),
                 rs.getString(3),rs.getString(4),
                 rs.getString(5),
-                rs.getDouble(6),rs.getInt(7),"",rs.getInt(8))
+                rs.getDouble(6),"")
             data.add(bean)
         }
         return data;
@@ -33,9 +33,7 @@ class ArregloProducto {
         valores.put("detalleproducto",bean.detalleProducto)
         valores.put("tipopresentacion",bean.tipoPresentacion)
         valores.put("precioproducto",bean.precio)
-        valores.put("stockproducto",bean.stock)
         valores.put("urlproducto",bean.urlProducto)
-        valores.put("idestado",bean.estado)
         estado=base.insert("tb_producto","cod",valores).toInt()
         return estado;
     }
@@ -50,9 +48,7 @@ class ArregloProducto {
         valores.put("detalleproducto",bean.detalleProducto)
         valores.put("tipopresentacion",bean.tipoPresentacion)
         valores.put("precioproducto",bean.precio)
-        valores.put("stockproducto",bean.stock)
         valores.put("urlproducto",bean.urlProducto)
-        valores.put("idestado",bean.estado)
         estado=base.update("tb_producto",valores,"idproducto=?", arrayOf(bean.codigo.toString()))
         return estado;
     }

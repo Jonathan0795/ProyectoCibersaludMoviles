@@ -68,9 +68,9 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Usuario:"
-                    android:width="230dp"
                     android:layout_marginBottom="15dp"
+                    android:width="230dp"
+                    android:text="Usuario:"
                     android:textColor="#000"
                     android:textStyle="bold" />
 
@@ -78,9 +78,9 @@
                     android:id="@+id/edtUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
                     android:width="230dp"
                     android:drawableEnd="@drawable/ic_baseline_person_24"
+                    android:ems="10"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -88,29 +88,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:text="Contraseña:"
                     android:layout_marginBottom="15dp"
-                    android:textColor="#000"
                     android:width="230dp"
+                    android:text="Contraseña:"
+                    android:textColor="#000"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/edtPassword"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:width="230dp"
                     android:drawableEnd="@drawable/ic_baseline_lock_24"
                     android:ems="10"
-                    android:width="230dp"
                     android:inputType="textPersonName" />
 
                 <Button
                     android:id="@+id/btnIngresar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
                     android:width="230dp"
                     android:backgroundTint="#73C2FB"
                     android:text="Ingresar"
-                    android:layout_marginTop="15dp"
                     android:textSize="12sp"
                     app:cornerRadius="20dp" />
             </LinearLayout>

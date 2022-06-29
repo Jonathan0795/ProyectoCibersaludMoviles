@@ -34,22 +34,19 @@ class InitBD : SQLiteOpenHelper(
                 "detalleproducto varchar(700),"+
                 "tipopresentacion varchar(50),"+
                 "precioproducto double,"+
-                "stockproducto int,"+
-                "urlproducto varchar(200),"+
-                "idestado int)")
+                "urlproducto varchar(200))")
 
         db.execSQL("create table tb_cliente("+
                 "idcliente integer primary key autoincrement,"+
-                "apellidomat varchar(50),"+
                 "apellidopat varchar(50),"+
+                "apellidomat varchar(50),"+
                 "nombre varchar(80),"+
                 "iddoc int references tb_tipodocumento(iddoc),"+
                 "documento char(10),"+
                 "fechnac date,"+
                 "tiposexo char(1),"+
                 "usuario varchar(60),"+
-                "clave varchar(60)," +
-                "direccion varchar(100))")
+                "clave varchar(60))")
 
         //DATOS
         db.execSQL("insert into tb_tipodocumento values" +
@@ -74,16 +71,7 @@ class InitBD : SQLiteOpenHelper(
                 "(10,7,'Dove','Bienvenido al mundo Dove en Inkafarma, ecuentra los mejores productos y promociones para la higiene, cuidado personal y belleza. Dove desarrollados, especialmente, para brindarte protección, calma, tratamiento e hidratación para tu piel o cabello según tus necesidades. Jabones, desodorantes, shampoos, antitranspirantes, cremas faciales, corporales, acondicionadores y más con Dove',\n" +
                 "'Dove.jpg',1),\n" +
                 "(11,7,'Pond’s','Bienvenida a un mundo de belleza, cuidado de la piel y más de 150 años de experiencia. Los productos Pond’s fueron diseñados, especialmente, para brindarte una piel hermosa, limpia, suave y radiante, en cualquier momento y para cualquier edad.',\n" +
-                "'Ponds.jpg',1),\n" +
-                "(12,7,'Sedal','Tratamiento, hidratación, higiene, cuidado capilar y más con Sedal. Los productos Sedal fueron diseñados especialmente para brindarte restauración, fortaleza, limpieza, brillo y nutrición para tu cabello, según tus diferentes necesidades. Shampoos, acondicionadores y cremas para peinar con Sedal.',\n" +
-                "'Sedal.jpg',1),\n" +
-                "(13,7,'Savital','Disfruta de cuidado, tratamiento, higiene y protección capilar con Savital. Sus productos con Aloe Vera y más ingredientes naturales te brindan calidad, fortaleza, humectación y suavidad para tu cabello. Descubre todos sus beneficios de acuerdo a tus necesidades y goza de belleza y cuidado especializado con Savital.',\n" +
-                "'Savital.png',1),\n" +
-                "(14,7,'Suave','Suave®, es una de las marcas más reconocidas en el Perú, y en otros países es conocida como Scott®. Tuvo sus inicios en 1870 y desde entonces, hemos sido el papel higiénico favorito de muchas familias. Los hogares de Latinoamérica usan millones de kilómetros de nuestras marcas cada año.',\n" +
-                "'suave.png',1),\n" +
-                "(15,null,'Dentaid',null,null,1),\n" +
-                "(16,15,'Vitis','VITIS® es la marca de higiene bucal que ayuda a prevenir, cuidar y proteger eficazmente la cavidad bucal. Es la gama más amplia y especializada de cepillos dentales manuales y eléctricos, pastas dentífricas, colutorios, sedas y cintas dentales. Una marca de higiene bucal que, gracias a los esfuerzos realizados en investigación y desarrollo de nuevos productos y formulaciones, se adaptada a cada boca y en cada momento.',\n" +
-                "'Vitis.jpg',1);")
+                "'Ponds.jpg',1);")
         db.execSQL("insert into tb_categorias values" +
                 "(1,null, 'Farmacia', 1),(2,1, 'Malestar Estomacal', 1),(3,1, 'Dolor Generalizado', 1),(4,1,'Malestar General',1),(5,1,'Resfríado Común',1),\n" +
                 "(6,1,'Cuidado Muscular',1),(7,null,'Cuidado Personal',1),(8,7,'Cuidado Bucal',1),(9,7,'Cuidado del Cabello',1),(10,7,'Desodorante',1),\n" +

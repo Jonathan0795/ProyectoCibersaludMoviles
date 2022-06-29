@@ -1,5 +1,7 @@
 package com.cibersalud.movil.Entidad
 
+import java.io.Serializable
+
 
 class Cliente ( var codigoCli:Int,
                 var paterno:String,
@@ -10,7 +12,7 @@ class Cliente ( var codigoCli:Int,
                 var nacimiento:String,
                 var sexo:String,
                 var usuario:String,
-                var password:String,
-                ){
+                var password:String
+                ): Serializable {
 
 }

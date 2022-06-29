@@ -40,7 +40,7 @@ class ArregloCliente {
         estado=base.insert("tb_cliente","idcliente",valores).toInt()
         return estado;
     }
-    fun editarProducto(bean: Cliente):Int{
+    fun editarCliente(bean: Cliente):Int{
         var estado=-1;
         var base: SQLiteDatabase = appConfig.BD.writableDatabase
         val valores= ContentValues();

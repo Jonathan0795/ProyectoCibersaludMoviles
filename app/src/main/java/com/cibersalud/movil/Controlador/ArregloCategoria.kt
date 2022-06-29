@@ -1,11 +1,27 @@
 package com.cibersalud.movil.Controlador
 
 import android.content.ContentValues
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.cibersalud.movil.Entidad.Categoria
+import com.cibersalud.movil.Entidad.Cliente
 import com.example.aplicacioncolegio.utils.appConfig
 
 class ArregloCategoria {
+    fun listadoCategoria():ArrayList<Categoria>{
+        var data= ArrayList<Categoria>();
+        var base:SQLiteDatabase=appConfig.BD.readableDatabase
+        var sql="select *from tb_categorias"
+        var rs: Cursor =base.rawQuery(sql,null)
+        while (rs.moveToNext()){
+            var bean= Categoria(rs.getInt(0),
+                rs.getInt(1),rs.getString(2),
+                rs.getInt(3))
+            data.add(bean)
+        }
+        return data;
+    }
+    /*
     fun crearCategoria(bean: Categoria):Int{
         var estado=-1;
         var base: SQLiteDatabase = appConfig.BD.writableDatabase
@@ -28,4 +44,6 @@ class ArregloCategoria {
         estado=base.update("tb_categorias",valores,"idcategorias=?", arrayOf(bean.codCate.toString()))
         return estado;
     }
+    */
+
 }
