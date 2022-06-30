@@ -4,11 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/activity_actualizarusuario.xml" value="0.2551928783382789" />
+        <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/activity_cliente.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/activity_detallecliente.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/activity_registroproducto.xml" value="0.1" />
         <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/activity_registrousuario.xml" value="0.33" />
         <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/card_categorias.xml" value="0.358695652173913" />
         <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/gghgh.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/item_cliente.xml" value="0.33" />
+        <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/item_producto.xml" value="0.16111111111111112" />
         <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/login.xml" value="0.358695652173913" />
         <entry key="..\:/Users/jonat/AndroidStudioProjects/ProyectoCibersaludMovil/app/src/main/res/layout/menu_card_productos.xml" value="0.358695652173913" />
       </map>

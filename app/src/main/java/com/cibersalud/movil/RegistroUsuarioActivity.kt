@@ -52,7 +52,7 @@ class RegistroUsuarioActivity : AppCompatActivity(), View.OnClickListener {
             var documento=edtdocume.text.toString()
             var fechnac=edtfecNac.text.toString()
             var tiposexo=spnsexo.selectedItem.toString()
-            var usuario=edtnombre.text.toString()
+            var usuario=edtusuario.text.toString()
             var clave=edtcontra.text.toString()
 
             val bean=Cliente(0,apellidopat,apellidomat,nombre,iddoc,documento,

@@ -3,7 +3,7 @@ package com.cibersalud.movil.Controlador
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.cibersalud.movil.Entidad.TipoDocumento
-import com.example.aplicacioncolegio.utils.appConfig
+import com.cibersalud.movil.utils.appConfig
 
 class ArregloTipoDocumento {
     fun listadoDocumento():ArrayList<TipoDocumento>{

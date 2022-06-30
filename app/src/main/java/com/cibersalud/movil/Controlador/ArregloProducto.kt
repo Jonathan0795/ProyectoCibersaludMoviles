@@ -4,7 +4,7 @@ import android.content.ContentValues
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.cibersalud.movil.Entidad.Producto
-import com.example.aplicacioncolegio.utils.appConfig
+import com.cibersalud.movil.utils.appConfig
 
 class ArregloProducto {
     fun listadoProducto():ArrayList<Producto>{

@@ -4,7 +4,7 @@ import android.content.ContentValues
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.cibersalud.movil.Entidad.Cliente
-import com.example.aplicacioncolegio.utils.appConfig
+import com.cibersalud.movil.utils.appConfig
 
 class ArregloCliente {
     fun listadoCliente():ArrayList<Cliente>{
@@ -35,8 +35,8 @@ class ArregloCliente {
         valores.put("documento",bean.documento)
         valores.put("fechnac",bean.nacimiento)
         valores.put("tiposexo",bean.sexo)
-        valores.put("username",bean.usuario)
-        valores.put("password",bean.password)
+        valores.put("usuario",bean.usuario)
+        valores.put("clave",bean.password)
         estado=base.insert("tb_cliente","idcliente",valores).toInt()
         return estado;
     }
@@ -52,8 +52,8 @@ class ArregloCliente {
         valores.put("documento",bean.documento)
         valores.put("fechnac",bean.nacimiento)
         valores.put("tiposexo",bean.sexo)
-        valores.put("username",bean.usuario)
-        valores.put("password",bean.password)
+        valores.put("usuario",bean.usuario)
+        valores.put("clave",bean.password)
         estado=base.update("tb_cliente",valores,"idcliente=?", arrayOf(bean.codigoCli.toString()))
         return estado;
     }

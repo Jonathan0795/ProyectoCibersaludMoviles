@@ -5,7 +5,8 @@ import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.cibersalud.movil.Entidad.Categoria
 import com.cibersalud.movil.Entidad.Cliente
-import com.example.aplicacioncolegio.utils.appConfig
+import com.cibersalud.movil.utils.appConfig
+
 
 class ArregloCategoria {
     fun listadoCategoria():ArrayList<Categoria>{

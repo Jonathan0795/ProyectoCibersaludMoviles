@@ -4,7 +4,7 @@ import android.content.ContentValues
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.cibersalud.movil.Entidad.Laboratorio
-import com.example.aplicacioncolegio.utils.appConfig
+import com.cibersalud.movil.utils.appConfig
 
 class ArregloLaboratorio {
     fun listadoLaboratorio():ArrayList<Laboratorio>{

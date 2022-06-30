@@ -1,4 +1,4 @@
-package com.example.aplicacioncolegio.utils
+package com.cibersalud.movil.utils
 
 import android.app.Application
 import android.content.Context
